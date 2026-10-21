@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form </title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body class="bg-light">
+    <main class="container py-5">
+        <form class="row g-4 bg-info p-4 p-md-5 rounded-5  mx-auto fs-5" style="max-width: 800px;">
+            <div class="col-12">
+                <h1 class="h3 text-center mb-2 fw-bold text-decoration-underline">Sign Up Today!</h1>
+            </div>
+
+            <div class="col-md-6">
+                <label for="firstname" class="form-label">First Name </label>
+                <input type="text" class="form-control" id="firstname" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="gender" class="form-label">Gender</label>
+                <select id="gender" name="gender" class="form-select" required>
+                    <option value="" selected disabled>Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob">
+            </div>
+
+            <div class="col-md-6">
+                <label for="phoneno" class="form-label">Phone No</label>
+                <input type="tel" class="form-control" id="phoneno" name="phoneno" placeholder="254700112233"
+                       pattern="254[0-9]{9}" minlength="12" maxlength="12"
+                       inputmode="numeric" title="eg 25471122233">
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="abc@gmail.com" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="school" class="form-label">Institution</label>
+                <input type="text" class="form-control" id="school" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="course" class="form-label">Current Course</label>
+                <input type="text" class="form-control" id="course" required>
+            </div>
+
+            <div class="col-12 d-flex gap-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-danger">Clear</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
